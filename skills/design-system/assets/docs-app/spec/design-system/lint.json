@@ -1,0 +1,134 @@
+{
+  "version": 1,
+  "include": [
+    "src/theme.css",
+    "src/styles.css"
+  ],
+  "token_files": [
+    "src/theme.css"
+  ],
+  "exceptions": [
+    {
+      "file": "src/styles.css",
+      "property": "width",
+      "value": "1px",
+      "reason": "The visually hidden accessible label uses a one-pixel clipping box; this is not a visible component size."
+    },
+    {
+      "file": "src/styles.css",
+      "property": "height",
+      "value": "1px",
+      "reason": "The visually hidden accessible label uses a one-pixel clipping box; this is not a visible component size."
+    },
+    {
+      "file": "src/styles.css",
+      "property": "margin",
+      "value": "-1px",
+      "reason": "The visually hidden accessible label offsets its one-pixel clipping box without consuming visible space."
+    },
+    {
+      "file": "src/styles.css",
+      "property": "transform",
+      "value": "translateY(-200%)",
+      "reason": "The skip link starts outside the viewport and returns to its normal position on focus; this is functional hiding geometry."
+    },
+    {
+      "file": "src/styles.css",
+      "property": "top",
+      "value": "100%",
+      "reason": "The dropdown is anchored to the trailing block edge of its own control container."
+    },
+    {
+      "file": "src/styles.css",
+      "property": "height",
+      "value": "calc(100dvh - var(--docs-header-offset, var(--docs-header-height)))",
+      "reason": "Available sidebar height equals the dynamic viewport minus the measured header height."
+    },
+    {
+      "file": "src/styles.css",
+      "property": "max-height",
+      "value": "calc(100dvh - var(--docs-header-offset, var(--docs-header-height)))",
+      "reason": "The mobile sidebar is bounded by the dynamic viewport minus the measured header height."
+    },
+    {
+      "file": "src/styles.css",
+      "property": "z-index",
+      "value": "calc(var(--docs-popup-layer) + 1)",
+      "reason": "The focused skip link must occupy the immediately higher layer than component popups."
+    },
+    {
+      "file": "src/styles.css",
+      "property": "z-index",
+      "value": "calc(var(--docs-header-layer) - 1)",
+      "reason": "The mobile sidebar occupies the layer immediately below its persistent header."
+    },
+    {
+      "file": "src/styles.css",
+      "property": "z-index",
+      "value": "calc(var(--docs-header-layer) - 2)",
+      "reason": "The sidebar backdrop occupies the layer immediately below the mobile sidebar."
+    }
+  ],
+  "duplicate_token_reviews": [
+    {
+      "value": "#3549db",
+      "tokens": [
+        {
+          "file": "src/theme.css",
+          "name": "--ds-accent"
+        },
+        {
+          "file": "src/theme.css",
+          "name": "--ds-focus"
+        }
+      ],
+      "reason": "The interactive accent and keyboard focus indicator currently share a color but are independent semantic roles; either must be adjustable without redefining the other."
+    },
+    {
+      "value": "16px",
+      "tokens": [
+        {
+          "file": "src/theme.css",
+          "name": "--ds-radius-lg"
+        },
+        {
+          "file": "src/theme.css",
+          "name": "--ds-space-4"
+        },
+        {
+          "file": "src/theme.css",
+          "name": "--ds-text-md"
+        }
+      ],
+      "reason": "Large corner radius, fourth spacing step, and body text size belong to separate design dimensions and must remain independently adjustable."
+    },
+    {
+      "value": "12px",
+      "tokens": [
+        {
+          "file": "src/theme.css",
+          "name": "--ds-space-3"
+        },
+        {
+          "file": "src/theme.css",
+          "name": "--ds-text-xs"
+        }
+      ],
+      "reason": "The third spacing step and small text size have distinct layout and typography responsibilities."
+    },
+    {
+      "value": "18px",
+      "tokens": [
+        {
+          "file": "src/theme.css",
+          "name": "--ds-icon"
+        },
+        {
+          "file": "src/theme.css",
+          "name": "--docs-blur"
+        }
+      ],
+      "reason": "Icon bounds control alignment and hit-area composition; header backdrop blur controls surface treatment. Their equal length is incidental."
+    }
+  ]
+}

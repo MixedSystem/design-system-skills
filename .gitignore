@@ -1,0 +1,25 @@
+# Publish only the maintained skill and repository overview.
+/*
+!/.gitignore
+!/README.md
+!/skills/
+/skills/*
+!/skills/design-system/
+/skills/design-system/*
+!/skills/design-system/SKILL.md
+!/skills/design-system/agents/
+/skills/design-system/agents/*
+!/skills/design-system/agents/openai.yaml
+!/skills/design-system/scripts/
+/skills/design-system/scripts/*
+!/skills/design-system/scripts/design_lint.ts
+!/skills/design-system/scripts/rendered_lint.ts
+!/skills/design-system/scripts/package.json
+!/skills/design-system/scripts/package-lock.json
+!/skills/design-system/scripts/tsconfig.json
+!/skills/design-system/assets/
+/skills/design-system/assets/*
+!/skills/design-system/assets/docs-app/
+!/skills/design-system/assets/docs-app/**
+/skills/design-system/assets/docs-app/node_modules/
+/skills/design-system/assets/docs-app/dist/

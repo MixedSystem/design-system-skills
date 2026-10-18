@@ -1,0 +1,5 @@
+interface:
+  display_name: "Design System"
+  short_description: "Build app-specific styles, components, and patterns"
+policy:
+  allow_implicit_invocation: true

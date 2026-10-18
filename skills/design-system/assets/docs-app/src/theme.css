@@ -1,0 +1,70 @@
+:root {
+  --ds-font: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --ds-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --ds-bg: #f8fafc;
+  --ds-surface: #ffffff;
+  --ds-ink: #17212f;
+  --ds-muted: #526173;
+  --ds-border: #dbe2ea;
+  --ds-control-border: #8793a4;
+  --ds-accent: #3549db;
+  --ds-accent-soft: #eef0ff;
+  --ds-danger: #a52836;
+  --ds-success: #16714b;
+  --ds-focus: #3549db;
+  --ds-radius-sm: 6px;
+  --ds-radius-md: 10px;
+  --ds-radius-lg: 16px;
+  --ds-space-1: 4px;
+  --ds-space-2: 8px;
+  --ds-space-3: 12px;
+  --ds-space-4: 16px;
+  --ds-space-5: 24px;
+  --ds-space-6: 32px;
+  --ds-space-7: 48px;
+  --ds-space-8: 64px;
+  --ds-control-sm: 36px;
+  --ds-control-md: 44px;
+  --ds-control-lg: 52px;
+  --ds-text-xs: 12px;
+  --ds-text-sm: 14px;
+  --ds-text-md: 16px;
+  --ds-text-lg: 20px;
+  --ds-text-xl: 28px;
+  --ds-text-display: 40px;
+  --ds-leading: 1.6;
+  --ds-leading-tight: 1.2;
+  --ds-weight-normal: 400;
+  --ds-weight-medium: 500;
+  --ds-weight-semibold: 600;
+  --ds-weight-bold: 700;
+  --ds-border-width: 1px;
+  --ds-focus-width: 2px;
+  --ds-focus-offset: var(--ds-focus-width);
+  --ds-focus-inset: calc(-1 * var(--ds-focus-width));
+  --ds-focus-forced: Highlight;
+  --ds-icon: 18px;
+  --ds-shadow: 0 12px 36px rgb(23 33 47 / 12%);
+  --docs-header-height: 76px;
+  --docs-header-offset: var(--docs-header-height);
+  --docs-shell-width: 1600px;
+  --docs-reading-width: 66ch;
+  --ds-select-max-height: 260px;
+  --ds-form-width: 460px;
+  --docs-backdrop: rgb(23 33 47 / 24%);
+  --docs-sidebar-width: 252px;
+  --docs-content-width: 900px;
+  --docs-toc-width: 180px;
+  --docs-glass: rgb(255 255 255 / 82%);
+  --docs-blur: 18px;
+  --docs-header-layer: 30;
+  --docs-popup-layer: 40;
+  --docs-page-enter-duration: 160ms;
+  --docs-page-enter-easing: ease-out;
+  --docs-page-enter-opacity: 0.8;
+  --docs-quote-border-width: calc(var(--ds-border-width) * 2);
+}
+
+@media (max-width: 860px) {
+  :root { --docs-header-height: 132px; }
+}
